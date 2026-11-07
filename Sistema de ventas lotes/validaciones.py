@@ -1,3 +1,4 @@
+import math
 def validar_texto_no_vacio(texto: str) -> bool:
     return len(texto.strip()) > 0
 
