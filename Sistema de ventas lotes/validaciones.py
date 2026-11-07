@@ -3,7 +3,7 @@ def validar_texto_no_vacio(texto: str) -> bool:
     return len(texto.strip()) > 0
 
 def validar_numero_positivo(valor: float) -> bool:
-    return valor > 0
+    return math.isfinite(valor) and valor > 0
 
 def codigo_existe(lotes: list, codigo: str) -> bool:
     for lote in lotes:
